@@ -13,13 +13,22 @@
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="#top">SSIGPRO</a>
-      <nav>
-        <a href="#chi-siamo">Chi siamo</a>
-        <a href="#ricerca">Ricerca</a>
-        <a href="#team">Team</a>
-        <a href="#contatti">Contatti</a>
-      </nav>
+      <a class="brand" href="#top">
+        <img src="logo.jpg" alt="SSIGPRO logo" class="brand-logo">
+        <span>SSIGPRO</span>
+      </a>
+      <div class="nav-right">
+        <nav>
+          <a href="#chi-siamo" data-i18n="nav_about">Chi siamo</a>
+          <a href="#ricerca" data-i18n="nav_research">Ricerca</a>
+          <a href="#team" data-i18n="nav_team">Team</a>
+          <a href="#contatti" data-i18n="nav_contacts">Contatti</a>
+        </nav>
+        <div class="lang-switch" aria-label="Language selector">
+          <button type="button" class="lang-btn active" data-lang="it" aria-pressed="true">IT</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -27,24 +36,24 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <p class="eyebrow">Universita di Bologna</p>
-          <h1>Statistical Signal Processing Group</h1>
-          <p class="lead">
-            SSIGPRO studia modelli e algoritmi per estrarre informazione da dati complessi:
-            inferenza statistica, machine learning, teoria dei segnali e decision making.
+          <p class="eyebrow" data-i18n="hero_eyebrow">Universita di Bologna</p>
+          <h1 data-i18n="hero_title">Statistical Signal Processing Group</h1>
+          <p class="lead" data-i18n="hero_lead">
+            SSIGPRO studia modelli e algoritmi per estrarre informazione da dati complessi: inferenza statistica, machine learning, teoria dei segnali e decision making.
           </p>
           <div class="cta-row">
-            <a class="btn" href="#ricerca">Aree di ricerca</a>
-            <a class="btn btn-light" href="#team">Incontra il team</a>
+            <a class="btn" href="#ricerca" data-i18n="hero_cta_research">Aree di ricerca</a>
+            <a class="btn btn-light" href="#team" data-i18n="hero_cta_team">Incontra il team</a>
           </div>
         </div>
         <aside class="hero-card">
-          <h2>Focus</h2>
+          <img src="logo.jpg" alt="SSIGPRO logo" class="hero-logo">
+          <h2 data-i18n="focus_title">Focus</h2>
           <ul>
-            <li>Signal and data processing</li>
-            <li>Statistical learning and inference</li>
-            <li>Modeling for AI-enabled systems</li>
-            <li>Optimization and decision support</li>
+            <li data-i18n="focus_1">Signal and data processing</li>
+            <li data-i18n="focus_2">Statistical learning and inference</li>
+            <li data-i18n="focus_3">Modeling for AI-enabled systems</li>
+            <li data-i18n="focus_4">Optimization and decision support</li>
           </ul>
         </aside>
       </div>
@@ -53,45 +62,42 @@
     <section id="chi-siamo" class="section">
       <div class="container two-col">
         <div>
-          <h2>Chi siamo</h2>
-          <p>
-            Il gruppo SSIGPRO sviluppa strumenti matematici e computazionali per l'analisi di segnali,
-            dati e sistemi complessi. Le nostre attivita integrano statistica, teoria dell'informazione,
-            machine learning e ottimizzazione.
+          <h2 data-i18n="about_title">Chi siamo</h2>
+          <p data-i18n="about_p1">
+            Il gruppo SSIGPRO sviluppa strumenti matematici e computazionali per l'analisi di segnali, dati e sistemi complessi. Le nostre attivita integrano statistica, teoria dell'informazione, machine learning e ottimizzazione.
           </p>
-          <p>
-            Operiamo su problemi teorici e applicativi, con attenzione al trasferimento verso
-            tecnologie intelligenti e sistemi reali.
+          <p data-i18n="about_p2">
+            Operiamo su problemi teorici e applicativi, con attenzione al trasferimento verso tecnologie intelligenti e sistemi reali.
           </p>
         </div>
         <div class="panel">
-          <h3>Ambiti applicativi</h3>
-          <p>Automazione, telecomunicazioni, sistemi embedded, sensoristica, AI affidabile.</p>
-          <h3>Metodo</h3>
-          <p>Dal modello matematico all'algoritmo, fino alla validazione sperimentale.</p>
+          <h3 data-i18n="about_apps_title">Ambiti applicativi</h3>
+          <p data-i18n="about_apps_text">Automazione, telecomunicazioni, sistemi embedded, sensoristica, AI affidabile.</p>
+          <h3 data-i18n="about_method_title">Metodo</h3>
+          <p data-i18n="about_method_text">Dal modello matematico all'algoritmo, fino alla validazione sperimentale.</p>
         </div>
       </div>
     </section>
 
     <section id="ricerca" class="section section-tinted">
       <div class="container">
-        <h2>Linee di ricerca</h2>
+        <h2 data-i18n="research_title">Linee di ricerca</h2>
         <div class="cards">
           <article class="card">
-            <h3>Elaborazione Statistica di Dati e Segnali</h3>
-            <p>Stima, rilevazione, filtraggio e analisi di segnali in scenari incerti o rumorosi.</p>
+            <h3 data-i18n="r1_title">Elaborazione Statistica di Dati e Segnali</h3>
+            <p data-i18n="r1_text">Stima, rilevazione, filtraggio e analisi di segnali in scenari incerti o rumorosi.</p>
           </article>
           <article class="card">
-            <h3>Machine Learning e Inferenza</h3>
-            <p>Modelli probabilistici, apprendimento supervisionato/non supervisionato e metodi bayesiani.</p>
+            <h3 data-i18n="r2_title">Machine Learning e Inferenza</h3>
+            <p data-i18n="r2_text">Modelli probabilistici, apprendimento supervisionato/non supervisionato e metodi bayesiani.</p>
           </article>
           <article class="card">
-            <h3>Ottimizzazione per i Sistemi Intelligenti</h3>
-            <p>Algoritmi efficienti per problemi decisionali ad alta dimensionalita e vincoli reali.</p>
+            <h3 data-i18n="r3_title">Ottimizzazione per i Sistemi Intelligenti</h3>
+            <p data-i18n="r3_text">Algoritmi efficienti per problemi decisionali ad alta dimensionalita e vincoli reali.</p>
           </article>
           <article class="card">
-            <h3>Teoria e Applicazioni</h3>
-            <p>Sviluppo teorico con applicazioni in elettronica, telecom e tecnologie data-driven.</p>
+            <h3 data-i18n="r4_title">Teoria e Applicazioni</h3>
+            <p data-i18n="r4_text">Sviluppo teorico con applicazioni in elettronica, telecom e tecnologie data-driven.</p>
           </article>
         </div>
       </div>
@@ -99,23 +105,23 @@
 
     <section id="team" class="section">
       <div class="container">
-        <h2>Team</h2>
-        <p class="section-intro">Profili di riferimento del gruppo e collaborazioni accademiche.</p>
+        <h2 data-i18n="team_title">Team</h2>
+        <p class="section-intro" data-i18n="team_intro">Profili di riferimento del gruppo e collaborazioni accademiche.</p>
         <div class="people-grid">
           <article class="person">
             <h3>Riccardo Rovatti</h3>
-            <p>Universita di Bologna</p>
-            <a href="https://www.unibo.it/sitoweb/riccardo.rovatti" target="_blank" rel="noopener noreferrer">Profilo personale</a>
+            <p data-i18n="aff_unibo">Universita di Bologna</p>
+            <a href="https://www.unibo.it/sitoweb/riccardo.rovatti" target="_blank" rel="noopener noreferrer" data-i18n="profile_link">Profilo personale</a>
           </article>
           <article class="person">
             <h3>Mauro Mangia</h3>
-            <p>Universita di Bologna</p>
-            <a href="https://www.unibo.it/sitoweb/mauro.mangia" target="_blank" rel="noopener noreferrer">Profilo personale</a>
+            <p data-i18n="aff_unibo">Universita di Bologna</p>
+            <a href="https://www.unibo.it/sitoweb/mauro.mangia" target="_blank" rel="noopener noreferrer" data-i18n="profile_link">Profilo personale</a>
           </article>
           <article class="person">
             <h3>Gianluca Setti</h3>
-            <p>Politecnico di Torino</p>
-            <a href="https://www.polito.it/personale?p=gianluca.setti" target="_blank" rel="noopener noreferrer">Profilo personale</a>
+            <p data-i18n="aff_polito">Politecnico di Torino</p>
+            <a href="https://www.polito.it/personale?p=gianluca.setti" target="_blank" rel="noopener noreferrer" data-i18n="profile_link">Profilo personale</a>
           </article>
         </div>
       </div>
@@ -124,21 +130,27 @@
     <section id="contatti" class="section section-tinted">
       <div class="container two-col">
         <div>
-          <h2>Contatti</h2>
-          <p>
-            Dipartimento di Ingegneria dell'Energia Elettrica e dell'Informazione
-            "Guglielmo Marconi" (DEI), Universita di Bologna.
+          <h2 data-i18n="contacts_title">Contatti</h2>
+          <p data-i18n="contacts_dept">
+            Dipartimento di Ingegneria dell'Energia Elettrica e dell'Informazione "Guglielmo Marconi" (DEI), Universita di Bologna.
           </p>
-          <p>
-            Viale del Risorgimento 2, 40136 Bologna, Italia
-          </p>
+          <p data-i18n="contacts_addr">Viale del Risorgimento 2, 40136 Bologna, Italia</p>
         </div>
         <div class="panel">
-          <h3>Riferimenti online</h3>
+          <h3 data-i18n="online_refs_title">Riferimenti online</h3>
           <ul class="link-list">
-            <li><a href="https://dei.unibo.it/it/ricerca/gruppi-di-ricerca/elaborazione-statistica-dati-segnali-ssigpro" target="_blank" rel="noopener noreferrer">Pagina gruppo SSIGPRO (DEI)</a></li>
-            <li><a href="https://www.unibo.it" target="_blank" rel="noopener noreferrer">Portale Universita di Bologna</a></li>
+            <li><a href="https://dei.unibo.it/it/ricerca/gruppi-di-ricerca/elaborazione-statistica-dati-segnali-ssigpro" target="_blank" rel="noopener noreferrer" data-i18n="ssigpro_page">Pagina gruppo SSIGPRO (DEI)</a></li>
+            <li><a href="https://www.unibo.it" target="_blank" rel="noopener noreferrer" data-i18n="unibo_portal">Portale Universita di Bologna</a></li>
           </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="partners">
+          <p class="partners-title" data-i18n="partners_title">Universita collaboratrici</p>
+          <div class="partners-logos">
+            <img src="logo_unibo.png" alt="Logo Universita di Bologna" class="partner-logo unibo-logo">
+            <img src="logo_polito.svg" alt="Logo Politecnico di Torino" class="partner-logo polito-logo">
+          </div>
         </div>
       </div>
     </section>
@@ -146,8 +158,136 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>SSIGPRO - Statistical Signal Processing Group</p>
+      <p data-i18n="footer_text">SSIGPRO - Statistical Signal Processing Group</p>
     </div>
   </footer>
+
+  <script>
+    const i18n = {
+      it: {
+        page_title: "SSIGPRO - Statistical Signal Processing Group",
+        page_desc: "SSIGPRO e il gruppo di ricerca su elaborazione statistica di dati e segnali, machine learning e inferenza a supporto delle decisioni.",
+        nav_about: "Chi siamo",
+        nav_research: "Ricerca",
+        nav_team: "Team",
+        nav_contacts: "Contatti",
+        hero_eyebrow: "Universita di Bologna",
+        hero_title: "Statistical Signal Processing Group",
+        hero_lead: "SSIGPRO studia modelli e algoritmi per estrarre informazione da dati complessi: inferenza statistica, machine learning, teoria dei segnali e decision making.",
+        hero_cta_research: "Aree di ricerca",
+        hero_cta_team: "Incontra il team",
+        focus_title: "Focus",
+        focus_1: "Signal and data processing",
+        focus_2: "Statistical learning and inference",
+        focus_3: "Modeling for AI-enabled systems",
+        focus_4: "Optimization and decision support",
+        about_title: "Chi siamo",
+        about_p1: "Il gruppo SSIGPRO sviluppa strumenti matematici e computazionali per l'analisi di segnali, dati e sistemi complessi. Le nostre attivita integrano statistica, teoria dell'informazione, machine learning e ottimizzazione.",
+        about_p2: "Operiamo su problemi teorici e applicativi, con attenzione al trasferimento verso tecnologie intelligenti e sistemi reali.",
+        about_apps_title: "Ambiti applicativi",
+        about_apps_text: "Automazione, telecomunicazioni, sistemi embedded, sensoristica, AI affidabile.",
+        about_method_title: "Metodo",
+        about_method_text: "Dal modello matematico all'algoritmo, fino alla validazione sperimentale.",
+        research_title: "Linee di ricerca",
+        r1_title: "Elaborazione Statistica di Dati e Segnali",
+        r1_text: "Stima, rilevazione, filtraggio e analisi di segnali in scenari incerti o rumorosi.",
+        r2_title: "Machine Learning e Inferenza",
+        r2_text: "Modelli probabilistici, apprendimento supervisionato/non supervisionato e metodi bayesiani.",
+        r3_title: "Ottimizzazione per i Sistemi Intelligenti",
+        r3_text: "Algoritmi efficienti per problemi decisionali ad alta dimensionalita e vincoli reali.",
+        r4_title: "Teoria e Applicazioni",
+        r4_text: "Sviluppo teorico con applicazioni in elettronica, telecom e tecnologie data-driven.",
+        team_title: "Team",
+        team_intro: "Profili di riferimento del gruppo e collaborazioni accademiche.",
+        aff_unibo: "Universita di Bologna",
+        aff_polito: "Politecnico di Torino",
+        profile_link: "Profilo personale",
+        contacts_title: "Contatti",
+        contacts_dept: "Dipartimento di Ingegneria dell'Energia Elettrica e dell'Informazione \"Guglielmo Marconi\" (DEI), Universita di Bologna.",
+        contacts_addr: "Viale del Risorgimento 2, 40136 Bologna, Italia",
+        online_refs_title: "Riferimenti online",
+        ssigpro_page: "Pagina gruppo SSIGPRO (DEI)",
+        unibo_portal: "Portale Universita di Bologna",
+        partners_title: "Universita collaboratrici",
+        footer_text: "SSIGPRO - Statistical Signal Processing Group"
+      },
+      en: {
+        page_title: "SSIGPRO - Statistical Signal Processing Group",
+        page_desc: "SSIGPRO is the research group on statistical signal and data processing, machine learning, and inference for decision support.",
+        nav_about: "About",
+        nav_research: "Research",
+        nav_team: "Team",
+        nav_contacts: "Contacts",
+        hero_eyebrow: "University of Bologna",
+        hero_title: "Statistical Signal Processing Group",
+        hero_lead: "SSIGPRO develops models and algorithms to extract information from complex data: statistical inference, machine learning, signal theory, and decision making.",
+        hero_cta_research: "Research areas",
+        hero_cta_team: "Meet the team",
+        focus_title: "Focus",
+        focus_1: "Signal and data processing",
+        focus_2: "Statistical learning and inference",
+        focus_3: "Modeling for AI-enabled systems",
+        focus_4: "Optimization and decision support",
+        about_title: "About",
+        about_p1: "The SSIGPRO group develops mathematical and computational tools for the analysis of signals, data, and complex systems. Our activities combine statistics, information theory, machine learning, and optimization.",
+        about_p2: "We work on both theoretical and applied problems, with attention to technology transfer toward intelligent systems and real-world applications.",
+        about_apps_title: "Application domains",
+        about_apps_text: "Automation, telecommunications, embedded systems, sensing, and trustworthy AI.",
+        about_method_title: "Method",
+        about_method_text: "From mathematical modeling to algorithms and experimental validation.",
+        research_title: "Research lines",
+        r1_title: "Statistical Signal and Data Processing",
+        r1_text: "Estimation, detection, filtering, and analysis of signals in uncertain or noisy scenarios.",
+        r2_title: "Machine Learning and Inference",
+        r2_text: "Probabilistic models, supervised/unsupervised learning, and Bayesian methods.",
+        r3_title: "Optimization for Intelligent Systems",
+        r3_text: "Efficient algorithms for high-dimensional decision problems with real constraints.",
+        r4_title: "Theory and Applications",
+        r4_text: "Theoretical advances with applications in electronics, telecommunications, and data-driven technologies.",
+        team_title: "Team",
+        team_intro: "Reference profiles and academic collaborations of the group.",
+        aff_unibo: "University of Bologna",
+        aff_polito: "Politecnico di Torino",
+        profile_link: "Personal profile",
+        contacts_title: "Contacts",
+        contacts_dept: "Department of Electrical, Electronic and Information Engineering \"Guglielmo Marconi\" (DEI), University of Bologna.",
+        contacts_addr: "Viale del Risorgimento 2, 40136 Bologna, Italy",
+        online_refs_title: "Online references",
+        ssigpro_page: "SSIGPRO group page (DEI)",
+        unibo_portal: "University of Bologna portal",
+        partners_title: "Collaborating universities",
+        footer_text: "SSIGPRO - Statistical Signal Processing Group"
+      }
+    };
+
+    const applyLanguage = (lang) => {
+      const dictionary = i18n[lang] || i18n.it;
+      document.documentElement.lang = lang;
+      document.title = dictionary.page_title;
+      document.querySelector('meta[name="description"]').setAttribute("content", dictionary.page_desc);
+
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        const key = el.getAttribute("data-i18n");
+        if (dictionary[key]) {
+          el.textContent = dictionary[key];
+        }
+      });
+
+      document.querySelectorAll(".lang-btn").forEach((btn) => {
+        const isActive = btn.getAttribute("data-lang") === lang;
+        btn.classList.toggle("active", isActive);
+        btn.setAttribute("aria-pressed", isActive ? "true" : "false");
+      });
+
+      localStorage.setItem("ssigpro-language", lang);
+    };
+
+    document.querySelectorAll(".lang-btn").forEach((btn) => {
+      btn.addEventListener("click", () => applyLanguage(btn.getAttribute("data-lang")));
+    });
+
+    const savedLanguage = localStorage.getItem("ssigpro-language");
+    applyLanguage(savedLanguage === "en" ? "en" : "it");
+  </script>
 </body>
 </html>

@@ -1,12 +1,12 @@
 :root {
-  --ink: #15202b;
-  --ink-soft: #30465c;
-  --paper: #f6f7f3;
+  --ink: #14314f;
+  --ink-soft: #315473;
+  --paper: #eef6ff;
   --surface: #ffffff;
-  --accent: #c84b31;
-  --accent-dark: #9f321e;
-  --line: #d8ddd6;
-  --shadow: 0 14px 34px rgba(21, 32, 43, 0.12);
+  --accent: #4f99da;
+  --accent-dark: #2f7fc2;
+  --line: #cddff2;
+  --shadow: 0 14px 34px rgba(20, 49, 79, 0.12);
 }
 
 * {
@@ -22,8 +22,8 @@ body {
   font-family: "Manrope", sans-serif;
   color: var(--ink);
   background:
-    radial-gradient(circle at 0% 0%, rgba(200, 75, 49, 0.14), transparent 38%),
-    radial-gradient(circle at 95% 8%, rgba(31, 132, 128, 0.12), transparent 36%),
+    radial-gradient(circle at 0% 0%, rgba(79, 153, 218, 0.2), transparent 38%),
+    radial-gradient(circle at 95% 8%, rgba(143, 198, 242, 0.28), transparent 36%),
     var(--paper);
   line-height: 1.6;
 }
@@ -52,8 +52,19 @@ body {
 .brand {
   text-decoration: none;
   color: var(--ink);
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.08em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--line);
 }
 
 nav {
@@ -157,6 +168,15 @@ h2 {
   padding: 1.2rem;
 }
 
+.hero-logo {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  margin-bottom: 0.6rem;
+}
+
 .hero-card ul {
   margin: 0;
   padding-left: 1.1rem;
@@ -234,6 +254,43 @@ h2 {
   color: var(--ink-soft);
 }
 
+.partners {
+  margin-top: 1.3rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid rgba(20, 49, 79, 0.1);
+}
+
+.partners-title {
+  margin: 0 0 0.8rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.partner-logo {
+  display: block;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.55rem 0.8rem;
+}
+
+.unibo-logo {
+  height: 64px;
+  width: auto;
+}
+
+.polito-logo {
+  height: 64px;
+  width: auto;
+}
+
 @media (max-width: 900px) {
   .hero-grid,
   .two-col,
@@ -246,5 +303,62 @@ h2 {
     gap: 0.8rem;
     flex-wrap: wrap;
     justify-content: flex-end;
+  }
+
+  .brand-logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .hero-logo {
+    width: 72px;
+    height: 72px;
+  }
+
+  .unibo-logo,
+  .polito-logo {
+    height: 56px;
+  }
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lang-switch {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.lang-btn {
+  border: 0;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  background: transparent;
+  cursor: pointer;
+}
+
+.lang-btn.active {
+  background: var(--accent);
+  color: #fff;
+}
+
+.lang-btn:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 1px;
+}
+
+@media (max-width: 900px) {
+  .nav-right {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.6rem;
   }
 }
