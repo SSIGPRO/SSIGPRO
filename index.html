@@ -15,7 +15,6 @@
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand active" href="index.html">
-        <img src="logo.jpg" alt="SSIGPRO logo" class="brand-logo">
         <span>SSIGPRO</span>
       </a>
       <div class="nav-right">
@@ -33,21 +32,22 @@
 
   <main>
     <section class="hero hero-only">
-      <div class="container hero-grid">
-        <div>
+      <div class="container">
+        <div class="hero-logo-area">
+          <img src="logo.jpg" alt="SSIGPRO logo" class="hero-ssigpro-logo">
+          <div class="hero-partners">
+            <img src="logo_unibo.png" alt="Logo Universita di Bologna" class="partner-logo unibo-logo">
+            <img src="logo_polito.svg" alt="Logo Politecnico di Torino" class="partner-logo polito-logo">
+          </div>
+        </div>
+
+        <div class="hero-main">
           <h1 data-i18n="hero_title">Statistical Signal Processing Group</h1>
           <p class="lead" data-i18n="hero_lead">
             SSIGPRO studia modelli e algoritmi per estrarre informazione da dati complessi: inferenza statistica, machine learning, teoria dei segnali e decision making.
           </p>
-        </div>
-        <aside class="hero-card">
-          <div class="hero-logo-stack">
-            <img src="logo.jpg" alt="SSIGPRO logo" class="hero-ssigpro-logo">
-            <div class="hero-partners">
-              <img src="logo_unibo.png" alt="Logo Universita di Bologna" class="partner-logo unibo-logo">
-              <img src="logo_polito.svg" alt="Logo Politecnico di Torino" class="partner-logo polito-logo">
-            </div>
-          </div>
+
+          <aside class="hero-card focus-card">
           <h2 data-i18n="focus_title">Focus</h2>
           <ul>
             <li data-i18n="focus_1">Signal and data processing</li>
@@ -55,7 +55,8 @@
             <li data-i18n="focus_3">Modeling for AI-enabled systems</li>
             <li data-i18n="focus_4">Optimization and decision support</li>
           </ul>
-        </aside>
+          </aside>
+        </div>
       </div>
     </section>
   </main>

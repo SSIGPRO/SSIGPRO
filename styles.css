@@ -50,22 +50,11 @@ body {
   color: var(--ink);
   font-weight: 700;
   letter-spacing: 0.08em;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
 }
 
 .brand.active,
 nav a.active {
   color: var(--accent-dark);
-}
-
-.brand-logo {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid var(--line);
 }
 
 .nav-right {
@@ -117,13 +106,6 @@ nav a {
   min-height: calc(100vh - 150px);
   display: flex;
   align-items: center;
-}
-
-.hero-grid {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: 1.45fr 1fr;
-  align-items: start;
 }
 
 h1,
@@ -182,17 +164,18 @@ h2 {
   padding: 1.2rem;
 }
 
-.hero-logo-stack {
+.hero-logo-area {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 0.55rem;
-  margin-bottom: 0.8rem;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 0 auto 2.6rem;
+  max-width: 420px;
 }
 
 .hero-ssigpro-logo {
-  width: 108px;
-  height: 108px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--line);
@@ -202,6 +185,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  justify-content: center;
 }
 
 .partner-logo {
@@ -221,6 +205,15 @@ h2 {
 .hero-card ul {
   margin: 0;
   padding-left: 1.1rem;
+}
+
+.hero-main {
+  max-width: 760px;
+}
+
+.focus-card {
+  margin-top: 1.6rem;
+  max-width: 560px;
 }
 
 .cards {
@@ -280,7 +273,6 @@ h2 {
 }
 
 @media (max-width: 900px) {
-  .hero-grid,
   .cards,
   .people-grid,
   .two-col {
@@ -303,14 +295,9 @@ h2 {
     justify-content: flex-end;
   }
 
-  .brand-logo {
-    width: 44px;
-    height: 44px;
-  }
-
   .hero-ssigpro-logo {
-    width: 86px;
-    height: 86px;
+    width: 130px;
+    height: 130px;
   }
 
   .unibo-logo,
