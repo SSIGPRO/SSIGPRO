@@ -50,11 +50,22 @@ body {
   color: var(--ink);
   font-weight: 700;
   letter-spacing: 0.08em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
 }
 
 .brand.active,
 nav a.active {
   color: var(--accent-dark);
+}
+
+.brand-logo {
+  width: 52px;
+  height: auto;
+  border-radius: 0;
+  border: 0;
+  object-fit: contain;
 }
 
 .nav-right {
@@ -174,7 +185,7 @@ h2 {
 }
 
 .hero-ssigpro-logo {
-  width: 220px;
+  width: 160px;
   height: auto;
   border-radius: 0;
   object-fit: contain;
@@ -295,8 +306,12 @@ h2 {
     justify-content: flex-end;
   }
 
+  .brand-logo {
+    width: 42px;
+  }
+
   .hero-ssigpro-logo {
-    width: 150px;
+    width: 125px;
     height: auto;
   }
 
