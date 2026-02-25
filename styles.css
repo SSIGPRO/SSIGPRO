@@ -109,15 +109,6 @@ nav a {
   color: #fff;
 }
 
-.page-view {
-  display: none;
-  min-height: calc(100vh - 150px);
-}
-
-.page-view.active {
-  display: block;
-}
-
 .hero {
   padding: 4.5rem 0 3.2rem;
 }
@@ -167,10 +158,8 @@ h2 {
   padding: 3rem 0;
 }
 
-.single-page-section {
+.page-section {
   min-height: calc(100vh - 150px);
-  display: flex;
-  align-items: flex-start;
 }
 
 .section-tinted {
@@ -223,7 +212,6 @@ h2 {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  width: 100%;
 }
 
 .card {
@@ -260,7 +248,6 @@ h2 {
   display: grid;
   gap: 1.2rem;
   grid-template-columns: 1.3fr 1fr;
-  width: 100%;
 }
 
 .panel {
